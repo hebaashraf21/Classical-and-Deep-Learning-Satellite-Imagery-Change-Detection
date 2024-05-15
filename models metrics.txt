@@ -1,0 +1,12 @@
+1- val: bce: 0.199634, dice: 0.297323, jaccard: 0.706776, loss: 0.248478, Jaccard Index: 0.706776
+https://colab.research.google.com/drive/1sPD0tM-ss39eQmnuws_zr90Z1X52DyLc?usp=sharing
+
+
+
+https://colab.research.google.com/drive/1uCFtf1yC9coNrQwr6O9QTYCa3RuzLEm4?usp=sharing
+
+https://colab.research.google.com/drive/1wia6OMBQRfJdzqg84bkIKm3QhzsqlrhB?usp=sharing
+
+https://colab.research.google.com/drive/1G3GUxCqwlgfBkTmAzmgQ8zCqMtual2t0?usp=sharing
+
+https://colab.research.google.com/drive/1G3GUxCqwlgfBkTmAzmgQ8zCqMtual2t0?usp=sharing
