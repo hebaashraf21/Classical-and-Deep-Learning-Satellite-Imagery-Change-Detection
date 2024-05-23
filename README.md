@@ -3,9 +3,17 @@
 ## Introduction
 Change detection in remote sensing and satellite imagery is essential for monitoring environmental changes, urban development, and natural disasters. Classical image processing techniques and deep learning models offer different approaches to address this task. In this report, we explore the application of classical image differencing and deep learning with the UNet architecture for change detection. We evaluate their performance and discuss how each technique contributes to the final model.
 
+## Dataset:
+https://drive.google.com/file/d/1LB53KldZ_hG_Kc2wEBmRjLH0Js80WGgr/view?usp=drive_link
+
+<img src="assets/A.png" alt=" " >
+<img src="assets/B.png" alt=" " >
+<img src="assets/label.png" alt=" " >
+
 ## Methodology
 
-**(1) Classical Techniques Image Differencing**
+**(1) Classical Techniques Image Differencing**<br>
+Image differencing calculates the absolute difference between corresponding pixels in two images. Thresholding the difference image highlights areas where significant changes have occurred.<br><br>
 
 | Threshold | Avg. Jaccard Index | Avg. Accuracy | Avg. Precision | Avg. Recall |
 |-----------|-------------------|---------------|----------------|-------------|
@@ -30,6 +38,7 @@ Change detection in remote sensing and satellite imagery is essential for monito
 | 190       | 0.652523          | 0.931094      | 0.00728623     | 0.000107154 |
 | 200       | 0.65863           | 0.931191      | 0.00426897     | 4.61258e-05 |
 
+
 1. **Jaccard Index (Intersection over Union):**
 As the threshold increases, fewer pixels are classified as changed, which reduces the number of true positives (correctly classified changes) but also reduces the number of false positives (incorrectly classified changes). This reduction in both true positives and false positives can lead to an increase in the Jaccard Index because the intersection between the predicted and ground truth change maps may still increase due to a larger reduction in false positives than in true positives. However, there's a point where further increasing the threshold causes the Jaccard Index to decrease due to a significant reduction in true positives, outweighing the reduction in false positives.
 
@@ -41,6 +50,16 @@ Precision measures the proportion of correctly predicted changed pixels among al
 
 4. **Recall:**
 Recall measures the proportion of correctly predicted changed pixels among all ground truth changed pixels. It decreases with the threshold because as the threshold increases, fewer pixels are classified as changed, leading to more false negatives and thus lower recall.
+
+჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻ Chosen Threshold =70 ჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻<br><br>
+<img src="assets/diff_1.png" alt=" " >
+<img src="assets/diff_2.png" alt=" " >
+<img src="assets/diff_3.png" alt=" " >
+<img src="assets/diff_4.png" alt=" " >
+<img src="assets/diff_5.png" alt=" " >
+
+
+<img src="assets/confusion_matrix.png" alt=" " >
 
 **(2) Deep Learning Techniques UNet Architecture:**
 
