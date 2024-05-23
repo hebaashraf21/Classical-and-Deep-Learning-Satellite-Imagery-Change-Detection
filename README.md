@@ -55,7 +55,6 @@ Recall measures the proportion of correctly predicted changed pixels among all g
 <img src="assets/diff_1.png" alt=" " >
 <img src="assets/diff_2.png" alt=" " >
 <img src="assets/diff_3.png" alt=" " >
-<img src="assets/diff_4.png" alt=" " >
 <img src="assets/diff_5.png" alt=" " >
 
 
